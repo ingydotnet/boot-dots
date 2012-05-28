@@ -1,5 +1,6 @@
 sourceif() { if [ -f $1 ]; then . $1; fi }
 
+sourceif ~/.../conf.sh
 sourceif ~/.../lib/path-manip.sh
 sourceif ~/.bashrc../common
 sourceif ~/.bashrc../local
