@@ -1,8 +1,11 @@
 for dotdir in split(expand("$DOTDOTDOT_ORDER"), ' ')
-    if 'boot-dots' != dotdir
-      let s:vimrc = expand("$DOTDOTDOT_ROOT").'/'.dotdir.'/.vimrc'
+    if -1 == match(dotdir, "boot-dots")
+      let s:vimrc = dotdir.'/.vimrc'
       if filereadable(s:vimrc)
+        " echo "…sourcing" s:vimrc
           exec "source" s:vimrc
       end
+    else
+      " echo "…Skipping " dotdir
     end
 endfor
