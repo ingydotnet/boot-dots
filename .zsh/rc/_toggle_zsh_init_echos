@@ -1,0 +1,5 @@
+_toggle_zsh_init_echos() {
+    # TODO:
+    # toggle creation of ~/.zsh/{...}/_echo to contain:
+    # echo -In $0
+}
