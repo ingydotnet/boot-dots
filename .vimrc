@@ -1,3 +1,4 @@
+" Loop over every ~/.../src/* repo and source their .vimrc
 for dotdir in split(expand("$DOTDOTDOT_ORDER"), ' ')
     if -1 == match(dotdir, "boot-dots")
       let s:vimrc = dotdir.'/.vimrc'
