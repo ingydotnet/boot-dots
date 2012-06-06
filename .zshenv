@@ -1,3 +1,3 @@
-source $DOTDOTDOT_ROOT/lib/basics
+source ~/.../lib/basics
 ...quieteach ...sourceif .zshenv
 ...sourcedircontents ~/.zsh/env
