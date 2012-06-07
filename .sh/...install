@@ -1,0 +1,6 @@
+#!/bin/sh
+...install() {(
+    set -xe
+    ... install -s
+    hash -r
+)}
